@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Pro Rata Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is this?
 
-## Available Scripts
+This project is a simple React web application that makes it easy to use the API in calculation of the pro rated
+investor allocation. The web application accepts information around size of the full allocation, investor name, average
+invested amount and requested amount. Results are returned and displayed in browser for reference.
 
-In the project directory, you can run:
+## Assumptions and requirements
 
-### `yarn start`
+Please ensure you have the latest `node.js` installed and configured correctly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Outstanding concerns
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* There is little to no validation on the type of input. This opens the potential for various types of exploits. This
+  has been left out given the nature of this project. If you intend to run this in a production environment, please
+  ensure validation is implemented correctly.
 
-### `yarn test`
+* Validation messages are also lacking making it a little tricky in the event incorrect information is provided such as
+  strings when numbers are required.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* The UI does not allow for the use of decimal places in the data entered.
 
-### `yarn build`
+* Tests should be implemented.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the Web Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application implemented using React and thus can be run in a similar fashion.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the app simply start it as follows:
 
-### `yarn eject`
+```bash
+yarn install
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The application should now be running. The standard port is `3000`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Docker support
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Not currently implemented. 
